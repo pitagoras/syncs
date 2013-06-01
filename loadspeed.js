@@ -7,7 +7,7 @@ var page = require('webpage').create(),
 //    phantom.exit(1);
 //} else {
     t = Date.now();
-    address = "http://8.sync-play.appspot.com/user1-aghbc/3.3-kvsupdnew7.htm"; //これはcookなので、変えること。
+    address = "http://8.sync-play.appspot.com/user1-aghbc/3.3-kvsupdnewz.htm"; //これはcookなので、変えること。
     page.open(address, function (status) {
         if (status !== 'success') {
             console.log('FAIL to load the address');
