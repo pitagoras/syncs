@@ -1,2 +1,2 @@
 #bin/bash
-phantomjs loadspeed.js
+phantomjs loadingspeed.js
