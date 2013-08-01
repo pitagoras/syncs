@@ -1,0 +1,1 @@
+web: phantomjs loadingspeed.js $PORT
