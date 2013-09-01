@@ -1,0 +1,14 @@
+#bin/bash
+
+hour=`date +%H`
+ min=`date +%M`
+
+if [ "$hour" -ge 23 ] then
+phantomjs loadspeed.js http://16.sync-playz.appspot.com/user1-aghbc/3.3-Weather_TARGET.htm
+fi
+
+if [ "$min" -ge 50 ] then
+phantomjs loadspeed.js http://16.sync-playz.appspot.com/user1-aghbc/3.3-daily_TARGET.htm
+fi
+
+phantomjs loadspeed.js http://16.sync-playz.appspot.com/user1-aghbc/3.3-everyBatch_TARGET.htm
