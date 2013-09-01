@@ -1,6 +1,6 @@
 #bin/bash
 now=`date +%k`
-if [ 11 -gt $now -a $now -gt $12 ]; then
+if [ 0 -gt $now -a $now -gt $3 ]; then
 	phantomjs loadspeed.js  http://16.sync-playz.appspot.com/user1-aghbc/3.3-Weather_TARGET.htm
 fi
 
