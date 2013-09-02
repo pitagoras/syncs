@@ -1,1 +1,1 @@
-web: phantomjs loadspeed.js $PORT
+web: phantomjs loadspeed.js
