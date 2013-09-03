@@ -30,7 +30,7 @@ _sleep(123456);
 	
 	m = (new Date()).getMinutes();
 
-	if((m >= 40) && (m <= 55)){
+	if((m >= 45) && (m <= 59)){
 	
     address = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-Weather_TARGET.htm"; //これはcookなので、変えること。
     page.open(address, function (status) {
