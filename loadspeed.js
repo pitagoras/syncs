@@ -6,7 +6,7 @@ var page = require('webpage').create(),
 		
 	h = (new Date()).getHours();
 
-	if((h >=  15) && (h < 16)){
+	if((h >=  16) && (h < 17)){
 	
     address = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-Daily_TARGET.htm"; //これはcookなので、変えること。
     page.open(address, function (status) {
@@ -30,7 +30,7 @@ _sleep(123456);
 	
 	m = (new Date()).getMinutes();
 
-	if((m >= 45) && (m <= 59)){
+	if((m >= 0) && (m <= 15)){
 	
     address = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-Weather_TARGET.htm"; //これはcookなので、変えること。
     page.open(address, function (status) {
