@@ -35,7 +35,7 @@ var page = require('webpage').create(),
             console.log('Page title is ' + page.evaluate(function () {
                 return document.title;
             }));
-            console.log('Loading time ' + t + ' msec');
+            console.log('TIME: H:' + h );
         }
         phantom.exit();
     });
@@ -48,7 +48,7 @@ var page = require('webpage').create(),
 	
 	m = (new Date()).getMinutes();
 
-	if((m >= 5) && (m <= 15)){
+	if((m >= 22) && (m <= 34)){
 	
     address = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-Weather_TARGET.htm"; //これはcookなので、変えること。
     page.open(address, function (status) {
@@ -59,7 +59,7 @@ var page = require('webpage').create(),
             console.log('Page title is ' + page.evaluate(function () {
                 return document.title;
             }));
-            console.log('Loading time ' + t + ' msec');
+            console.log('TIME: M:' + m);
         }
         phantom.exit();
     });
