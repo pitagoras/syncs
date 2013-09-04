@@ -6,7 +6,7 @@ var page = require('webpage').create(),
 		
 	h = (new Date()).getHours();
 
-	if((h >=  16) && (h < 17)){
+	if((h >=  10) && (h < 11)){
 	
     address = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-Daily_TARGET.htm"; //これはcookなので、変えること。
     page.open(address, function (status) {
@@ -19,18 +19,18 @@ var page = require('webpage').create(),
             }));
             console.log('TIME: H:' + h );
         }
-        phantom.exit();
+//        phantom.exit();
     });
 
 	}
 
 
-_sleep(123456);	
+// _sleep(123456);	
 
 	
 	m = (new Date()).getMinutes();
 
-	if((m >= 0) && (m <= 15)){
+	if((m >= 5) && (m <= 20)){
 	
     address = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-Weather_TARGET.htm"; //これはcookなので、変えること。
     page.open(address, function (status) {
@@ -43,13 +43,13 @@ _sleep(123456);
             }));
             console.log('TIME: M:' + m);
         }
-        phantom.exit();
+//        phantom.exit();
     });
 
 	}
 	
 	
-_sleep(123456);
+// _sleep(123456);
 
 
     address = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-everyBatch_TARGET.htm"; //これはcookなので、変えること。
@@ -68,11 +68,11 @@ _sleep(123456);
 
 	
 	
-function _sleep(time){
-	var d1 = new Date().getTime();
-	var d2 = new Date().getTime();
-	while( d2 < d1 + time ){
-		d2=new Date().getTime();
-	}
-	return;
-}
+// function _sleep(time){
+//	var d1 = new Date().getTime();
+//	var d2 = new Date().getTime();
+//	while( d2 < d1 + time ){
+//		d2=new Date().getTime();
+//	}
+//	return;
+// }
