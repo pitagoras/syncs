@@ -6,7 +6,7 @@ var page = require('webpage').create(),
 
 	
 	
-    address = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-everyBatch_TARGET.htm"; //これはcookなので、変えること。
+    address = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-everyBatch_TARGET003.htm"; //これはcookなので、変えること。
     page.open(address, function (status) {
         if (status !== 'success') {
             console.log('FAIL to load the address');
