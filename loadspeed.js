@@ -3,7 +3,6 @@ var page = require('webpage').create(),
     t, address;
 
     t = Date.now();
-
 	
     address = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-everyBatch_TARGET003.htm"; //これはcookなので、変えること。
     page.open(address, function (status) {
@@ -21,7 +20,7 @@ var page = require('webpage').create(),
 	m = (new Date()).getMinutes();	
 	h = (new Date()).getHours();
 
-	if ((h = 14) && (m <= 11)) { // 22:00 - 23:00
+	if ((h = 1) && (m <= 10)) { // 10:00 - 11:00
     address = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-Daily_TARGET.htm"; //これはcookなので、変えること。
     page.open(address, function (status) {
         if (status !== 'success') {
@@ -40,7 +39,7 @@ var page = require('webpage').create(),
 	m = (new Date()).getMinutes();
 	h = (new Date()).getHours();
 	
-	if ((h = 15) && (m <= 11)) { // 23:00 - 24:00
+	if ((h = 2) && (m <= 10)) { // 11:00 - 12:00
 // 日の出・日没時間の洗い替え。
     address = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-everySun_TARGET003.htm"; //これはcookなので、変えること。
     page.open(address, function (status) {
@@ -60,7 +59,7 @@ var page = require('webpage').create(),
 	m = (new Date()).getMinutes();	
 	h = (new Date()).getHours();
 	
-	if ((h = 16) && (m <= 11)) { // 24:00 - 25:00
+	if ((h = 3) && (m <= 10)) { // 12:00 - 13:00
 // Scoreを「かきまぜる」役目。	
     address = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-everyBatch_Score_TARGET.htm"; //これはcookなので、変えること。
     page.open(address, function (status) {
