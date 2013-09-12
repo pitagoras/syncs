@@ -32,7 +32,7 @@ var page = require('webpage').create(),
             }));
             console.log('TIME: H:' + h );
         }
-	phantom.exit();
+//	phantom.exit();
     });
 	}
 	
@@ -72,7 +72,7 @@ var page = require('webpage').create(),
             }));
             console.log('Loading time ' + m);
         }
-	phantom.exit();
+//	phantom.exit();
     });
 	}
 
@@ -92,5 +92,5 @@ var page = require('webpage').create(),
             console.log('TIME: M:' + m);
         }
     });
-    phantom.exit();	
+//  phantom.exit();	
 	}
