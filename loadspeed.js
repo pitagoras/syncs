@@ -56,7 +56,7 @@ var page = require('webpage').create(),
             }));
             console.log('Loading time ' + m);
         }
-	phantom.exit();
+//	phantom.exit();
     });
 		}
 	}
