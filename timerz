@@ -1,6 +1,2 @@
 #bin/bash
-phantomjs loadspeeds.js http://16.sync-playz.appspot.com/user1-aghbc/3.3-Weather_TARGET.htm
-sleep 45
-phantomjs loadspeeds.js http://16.sync-playz.appspot.com/user1-aghbc/3.3-Daily_TARGET.htm
-sleep 45
-phantomjs loadspeeds.js http://16.sync-playz.appspot.com/user1-aghbc/3.3-everyBatch_TARGET.htm
+phantomjs loadspeed_.js
