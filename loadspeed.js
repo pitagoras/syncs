@@ -4,8 +4,8 @@ var page = require('webpage').create(),
 
     t = Date.now();
 	
-    address = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-everyBatch_TARGET003.htm"; //これはcookなので、変えること。
-    page.open(address, function (status) {
+    address1 = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-everyBatch_TARGET003.htm"; //これはcookなので、変えること。
+    page.open(address1, function (status) {
         if (status !== 'success') {
             console.log('FAIL to load the address');
         } else {
@@ -22,8 +22,8 @@ var page = require('webpage').create(),
 
 	if (h == 14) {
 		if (m >= 50) { // 23:50 -
-    address = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-Daily_TARGET.htm"; //これはcookなので、変えること。
-    page.open(address, function (status) {
+    address2 = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-Daily_TARGET.htm"; //これはcookなので、変えること。
+    page.open(address2, function (status) {
         if (status !== 'success') {
             console.log('FAIL to load the address');
         } else {
@@ -35,6 +35,20 @@ var page = require('webpage').create(),
         }
 //	phantom.exit();
     });
+	
+    address1 = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-everyBatch_TARGET003.htm"; //これはcookなので、変えること。
+    page.open(address1, function (status) {
+        if (status !== 'success') {
+            console.log('FAIL to load the address');
+        } else {
+            t = Date.now() - t;
+            console.log('Page title is ' + page.evaluate(function () {
+                return document.title;
+            }));
+            console.log('Loading time ' + t + ' msec');
+        }
+    });	
+	
 		}
 	}
 	
@@ -45,8 +59,8 @@ var page = require('webpage').create(),
 	if (h == 15) {
 		if (m <= 10) { // 24:00 -
 // 日の出・日没時間の洗い替え。
-    address = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-everySun_TARGET003.htm"; //これはcookなので、変えること。
-    page.open(address, function (status) {
+    address3 = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-everySun_TARGET003.htm"; //これはcookなので、変えること。
+    page.open(address3, function (status) {
         if (status !== 'success') {
             console.log('FAIL to load the address');
         } else {
@@ -58,6 +72,20 @@ var page = require('webpage').create(),
         }
 //	phantom.exit();
     });
+	
+    address1 = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-everyBatch_TARGET003.htm"; //これはcookなので、変えること。
+    page.open(address1, function (status) {
+        if (status !== 'success') {
+            console.log('FAIL to load the address');
+        } else {
+            t = Date.now() - t;
+            console.log('Page title is ' + page.evaluate(function () {
+                return document.title;
+            }));
+            console.log('Loading time ' + t + ' msec');
+        }
+    });	
+	
 		}
 	}
 	
@@ -67,8 +95,8 @@ var page = require('webpage').create(),
 	if (h == 13) {
 		if (m <= 10) { // 22:00 -
 // Scoreを「かきまぜる」役目。	
-    address = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-everyBatch_Score_TARGET.htm"; //これはcookなので、変えること。
-    page.open(address, function (status) {
+    address4 = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-everyBatch_Score_TARGET.htm"; //これはcookなので、変えること。
+    page.open(address4, function (status) {
         if (status !== 'success') {
             console.log('FAIL to load the address');
         } else {
@@ -80,6 +108,20 @@ var page = require('webpage').create(),
         }
 //	phantom.exit();
     });
+	
+    address1 = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-everyBatch_TARGET003.htm"; //これはcookなので、変えること。
+    page.open(address1, function (status) {
+        if (status !== 'success') {
+            console.log('FAIL to load the address');
+        } else {
+            t = Date.now() - t;
+            console.log('Page title is ' + page.evaluate(function () {
+                return document.title;
+            }));
+            console.log('Loading time ' + t + ' msec');
+        }
+    });	
+	
 		}
 	}
 
@@ -87,8 +129,8 @@ var page = require('webpage').create(),
 
 	if (m >= 50) {
 	
-    address = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-Weather_TARGET.htm"; //これはcookなので、変えること。
-    page.open(address, function (status) {
+    address5 = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-Weather_TARGET.htm"; //これはcookなので、変えること。
+    page.open(address5, function (status) {
         if (status !== 'success') {
             console.log('FAIL to load the address');
         } else {
@@ -99,5 +141,19 @@ var page = require('webpage').create(),
             console.log('TIME: M:' + m);
         }
     });
-//  phantom.exit();	
+//  phantom.exit();
+
+    address1 = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-everyBatch_TARGET003.htm"; //これはcookなので、変えること。
+    page.open(address1, function (status) {
+        if (status !== 'success') {
+            console.log('FAIL to load the address');
+        } else {
+            t = Date.now() - t;
+            console.log('Page title is ' + page.evaluate(function () {
+                return document.title;
+            }));
+            console.log('Loading time ' + t + ' msec');
+        }
+    });
+	
 	}
