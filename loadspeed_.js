@@ -87,8 +87,9 @@ var page = require('webpage').create(),
 	}
 
 	m = (new Date()).getMinutes();		
+	h = (new Date()).getHours();
 
-	if ( h%2 == 0 ) {
+	if ( h%2 == 1 ) {
 		if (m >= 30) {
 			if (m <= 39){
 	
