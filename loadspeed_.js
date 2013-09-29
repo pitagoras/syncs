@@ -88,8 +88,9 @@ var page = require('webpage').create(),
 
 	m = (new Date()).getMinutes();		
 
-	if (m >= 30) {
-		if (m <= 39){
+	if ( h%2 == 0 ) {
+		if (m >= 30) {
+			if (m <= 39){
 	
     address5 = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-Weather_TARGET.htm"; //これはcookなので、変えること。
     page.open(address5, function (status) {
@@ -104,6 +105,6 @@ var page = require('webpage').create(),
         }
     });
 //  phantom.exit();
-
+			}
 		}
 	}
