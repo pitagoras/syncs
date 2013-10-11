@@ -89,7 +89,7 @@ var page = require('webpage').create(),
 	m = (new Date()).getMinutes();		
 	h = (new Date()).getHours();
 
-	if ( h%2 == 1 ) {
+	if ( h%3 == 1 ) { // 9時間差のため、4,7,10,13,16,19,22時に稼働
 		if (m >= 30) {
 			if (m <= 40){
 	
