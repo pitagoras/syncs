@@ -1,2 +1,1 @@
-web: phantomjs loadspeed2.js
-web: phantomjs loadspeed_.js
+web: phantomjs loading.js
