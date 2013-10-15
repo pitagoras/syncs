@@ -15,8 +15,8 @@ var page = require('webpage').create(),
             }));
             console.log('Loading time ' + t + ' msec');
         }
-	phantom.exit();
-    });		
+//	phantom.exit();
+    });
 
 	m = (new Date()).getMinutes();	
 	h = (new Date()).getHours();
@@ -34,13 +34,14 @@ var page = require('webpage').create(),
             }));
             console.log('TIME: H:' + h );
         }
-	phantom.exit();
+//	phantom.exit();
     });
 	
 		}
 	}
 
-	
+	m = (new Date()).getMinutes();	
+	h = (new Date()).getHours();	
 	
 	if (h == 11) {
 		if (m <= 10) { // 20:10 -
@@ -56,13 +57,14 @@ var page = require('webpage').create(),
             }));
             console.log('Loading time ' + m);
         }
-	phantom.exit();
+//	phantom.exit();
     });
 		
 		}
 	}
 
-
+	m = (new Date()).getMinutes();	
+	h = (new Date()).getHours();
 	
 	if (h == 12) {
 		if (m <= 10) { // 21:10 -
@@ -78,13 +80,14 @@ var page = require('webpage').create(),
             }));
             console.log('Loading time ' + m);
         }
-	phantom.exit();
+//	phantom.exit();
     });
 	
 		}
 	}
 
-
+	m = (new Date()).getMinutes();	
+	h = (new Date()).getHours();
 
 	if ( h%3 == 1 ) {	// 9時間差のため、偶数時に稼働 9時間差のため、4,7,10,13,16,19,22時に稼働
 		if (m >= 30) {
@@ -102,7 +105,7 @@ var page = require('webpage').create(),
             console.log('TIME: M:' + m);
         }
     });
-    phantom.exit();
+//    phantom.exit();
 			}
 		}
 	}
