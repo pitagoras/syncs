@@ -109,3 +109,4 @@ var page = require('webpage').create(),
 			}
 		}
 	}
+exit();
