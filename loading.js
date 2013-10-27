@@ -39,9 +39,6 @@ var page = require('webpage').create(),
 	
 		}
 	}
-
-	m = (new Date()).getMinutes();	
-	h = (new Date()).getHours();	
 	
 	if (h == 11) {
 		if (m <= 10) { // 20:10 -
@@ -63,9 +60,6 @@ var page = require('webpage').create(),
 		}
 	}
 
-	m = (new Date()).getMinutes();	
-	h = (new Date()).getHours();
-	
 	if (h == 12) {
 		if (m <= 10) { // 21:10 -
 // Scoreを「かきまぜる」役目。	
@@ -86,9 +80,6 @@ var page = require('webpage').create(),
 		}
 	}
 
-	m = (new Date()).getMinutes();	
-	h = (new Date()).getHours();
-
 	if ( h%3 == 1 ) {	// 9時間差のため、偶数時に稼働 9時間差のため、1,4,7,10,13,16,19,22時に稼働
 		if (m >= 30) {
 			if (m <= 40){
@@ -105,9 +96,10 @@ var page = require('webpage').create(),
             console.log('TIME: M:' + m);
         }
     });
-    phantom.exit();
+
 			}
 		}
 	}
-
+	
+    phantom.exit();
 	
