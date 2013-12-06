@@ -21,8 +21,8 @@ var page = require('webpage').create(),
 	m = (new Date()).getMinutes();	
 	h = (new Date()).getHours();
 
-	if (h == 10) {
-		if (m <= 10) { // 19:10 -
+	if (h == 7) {
+		if (m <= 10) { // 16:10 -
     address2 = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-Daily_TARGET.htm";
     page.open(address2, function (status) {
         if (status !== 'success') {
