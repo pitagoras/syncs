@@ -18,16 +18,12 @@ var page = require('webpage').create(),
 //	phantom.exit();
     });
 
-	m = (new Date()).getMinutes();	
+	m = (new Date()).getMinutes();
 	h = (new Date()).getHours();
 
-<<<<<<< HEAD
 	if (h == 4) {
 		if (m <= 10) { // 13:10 -
-=======
-	if (h == 3) {
-		if (m <= 10) { // 12:10 -
->>>>>>> 7d22e7177d0096bda930d2415c33e22bb2285eac
+// 日の出・日没時間・月の満ち欠けの設定。
     address2 = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-Daily_TARGET.htm";
     page.open(address2, function (status) {
         if (status !== 'success') {
