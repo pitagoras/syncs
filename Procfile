@@ -1,2 +1,2 @@
-phantomjs loading.js
+worker: phantomjs loading.js
 
