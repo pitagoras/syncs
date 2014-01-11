@@ -1,1 +1,1 @@
-web: phantomjs loadingz.js
+web: phantomjs loading.js
