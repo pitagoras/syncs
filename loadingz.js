@@ -15,7 +15,7 @@ var page = require('webpage').create(),
             }));
             console.log('Loading time ' + t + ' msec');
         }
-	phantom.exit();
+//	phantom.exit();
     });
 
 	m = (new Date()).getMinutes();
@@ -35,7 +35,7 @@ var page = require('webpage').create(),
             }));
             console.log('Loading time ' + m);
         }
-	phantom.exit();
+//	phantom.exit();
     });
 	
 		}
@@ -55,7 +55,7 @@ var page = require('webpage').create(),
             }));
             console.log('Loading time ' + m);
         }
-	phantom.exit();
+//	phantom.exit();
     });
 		
 		}
@@ -75,7 +75,7 @@ var page = require('webpage').create(),
             }));
             console.log('Loading time ' + m);
         }
-	phantom.exit();
+//	phantom.exit();
     });
 	
 		}
@@ -97,7 +97,7 @@ var page = require('webpage').create(),
             console.log('TIME: M:' + m);
         }
     });
-    phantom.exit();
+//    phantom.exit();
 
 			}
 		}
