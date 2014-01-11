@@ -41,8 +41,8 @@ var page = require('webpage').create(),
 		}
 	}
 	
-	if (h == 11) {
-		if (m <= 10) { // 20:10 -
+	if (h == 5) {
+		if (m <= 10) { // 14:10 -
 // 日の出・日没時間の洗い替え。
     address3 = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-everySun_TARGET003.htm";
     page.open(address3, function (status) {
