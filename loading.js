@@ -21,8 +21,8 @@ var page = require('webpage').create(),
 	m = (new Date()).getMinutes();
 	h = (new Date()).getHours();
 
-	if (h == 4) {
-		if (m <= 10) { // 13:10 -
+	if (h == 17) {
+		if (m <= 10) { // 26:10 -
 // 日の出・日没時間・月の満ち欠けの設定。
     address2 = "http://16.sync-playz.appspot.com/user1-aghbc/3.3-Daily_TARGET.htm";
     page.open(address2, function (status) {
